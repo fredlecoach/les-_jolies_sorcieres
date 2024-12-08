@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Carousel from "./Carousel";
-import HomePage from "./HomePage"; // Nouvelle page
+// import HomePage from "./HomePage"; // Nouvelle page
 import Activites from "./Activites";
 import Contacter from "./Contact";
 import { Pratiques } from "../utils/Pratiques";
