@@ -1,0 +1,33 @@
+.bouton{
+  color: #dab779;
+  background-color: #4b4f40;
+  height: 70px;
+  width: 200px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+}
+.bouton:hover{
+  color: #000;
+  background-color: #79d5da;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animation {
+  animation: slideUp 4s ease-in-out forwards;
+}
+
+.nav-item{
+  padding-right: 50px;
+}

@@ -1,0 +1,12 @@
+.accepter-band{
+  height: 500px;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 50px 0px;
+  background-image: url('../assets/accepter.jpg');
+  background-position: center;
+  background-size:cover
+}

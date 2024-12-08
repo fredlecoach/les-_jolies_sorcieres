@@ -1,0 +1,15 @@
+.accueil-band{
+  height: 500px;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 50px 0px;
+  background-image: url('../assets/pardon1.jpg');
+  background-position: center;
+  background-size:cover
+}
+.bg-accueil{
+  background-color: rgb(220, 244, 232);
+}

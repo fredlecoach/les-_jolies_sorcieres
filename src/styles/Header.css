@@ -1,0 +1,27 @@
+.nav-link{
+  color: #4b4f40;
+}
+
+.nav-link:hover{
+  color: #dab779
+}
+
+.bg-purple{
+  background: rgba(105, 20, 100, 0.5);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+ /* Couleur de remplissage */
+  border-radius: 50%; /* Rendre l'icône ronde */
+  width: 50px; /* Taille */
+  height: 40px;
+  background-image: url("../assets/lotus.png"); /* Supprime l'icône par défaut */
+  content: ''; 
+  background-size: cover;
+  filter: brightness(0) invert(1); /* Rend l'image blanche */
+}
+
+.navbar-nav{
+  margin-left: 500px;
+}

@@ -1,0 +1,13 @@
+.top-bar{
+  background-color: #4b4f40;
+  color: #fff
+}
+
+.btn-top{
+  background-color: #dab779;
+  color: #4b4f40
+}
+
+.btn-top:hover{
+  background-color: #eadb91ee;
+}
