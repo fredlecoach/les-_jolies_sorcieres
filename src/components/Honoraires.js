@@ -1,8 +1,19 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import "animate.css";
+import styled from "styled-components";
 
 export default function Honoraires() {
+
+  const StyledTitre = styled.h1`
+    text-transform: capitalize;
+    background-color: rgb(220, 244, 232);
+    color: rgba(105, 20, 100, 0.5);
+    padding: 10px;
+    text-align: center;
+  
+  `
+
   useEffect(() => {
     // Ajoute les classes Animate.css après le montage
     const button = document.querySelector(".bounce");
@@ -11,6 +22,10 @@ export default function Honoraires() {
 
   return (
     <div className="container">
+
+      <StyledTitre>tableau tarifaire de prestations</StyledTitre>
+
+
       <table className="table table-bordered table-hover text-center">
         <thead>
           <tr>

@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 code {
@@ -14,4 +15,14 @@ code {
 
 .custom-bg{
   background-color: #f1f3e7
+}
+
+body.dark{
+  background-color: #333;
+  color:#d8c248
+}
+
+.dark{
+  color: blue;
+  transition: color 0.3s
 }

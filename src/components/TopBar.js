@@ -1,7 +1,22 @@
 import { Link } from "react-router-dom";
-import "../styles/TopBar.css"
+import "../styles/TopBar.css";
+import { useTheme } from "../utils/ThemeContext";
+import { useEffect } from "react";
+import 'animate.css'
 
 export default function TopBar(){
+  const { isDarkMode, toggleTheme } = useTheme();
+
+  useEffect(
+    ()=>{
+      const boutons = document.querySelector("button");
+      boutons.classList.add("animate__animated", "animate__fadeIn")
+      
+      const contact= document.querySelector(".btn-top");
+      contact.classList.add("animate__animated", "animate__shakeX")
+    }, []
+  )
+
   return (
     <div>
       <section className="top-bar d-flex justify-content-between">
@@ -12,7 +27,30 @@ export default function TopBar(){
         
         <div>
          <Link to="/contact" className="btn btn-top my-2 mx-3">Contactez-moi</Link>
+          {/* Bouton mode sombre ou clair */}          
+        <button
+          className="btn btn-top my-2 mx-3"
+          onClick={toggleTheme}
+          style={{
+            backgroundColor: isDarkMode ? "#abdbe3" : "#e28743",
+            color: isDarkMode ? "#000" : "#fff",
+            transition: "all 0.3s",
+          }}
+        >
+         {isDarkMode ? (
+            <span>
+              Basculer vers mode <i className="bi bi-brightness-high-fill"></i>
+            </span>
+          ) : (
+            <span>
+              Basculer vers mode <i className="bi bi-moon-stars-fill"></i>
+            </span>
+          )}
+
+        </button>
         </div>
+
+        
         
       </section>
     </div>
