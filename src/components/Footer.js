@@ -65,7 +65,11 @@ export default function Footer() {
           <p>Conditions générales de vente</p>
           <p>&copy; Tous droits réservés</p>
         </div>
+
+        <small className="mx-auto fw-bold">FredRc - &copy;Copyright - Tous droits réservés</small>
+
       </div>
+      
     </footer>
   );
 }
