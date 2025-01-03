@@ -65,11 +65,12 @@ export default function Footer() {
           <p>Conditions générales de vente</p>
           <p>&copy; Tous droits réservés</p>
         </div>
-
-        <small className="mx-auto fw-bold">FredRc - &copy;Copyright - Tous droits réservés</small>
-
       </div>
       
+      <div className="text-center fw-bold text-light" style={{ backgroundColor: "#4B4f40"}}>
+        <small>FredRc - &copy;Copyright - Tous droits réservés</small>
+      </div>
+
     </footer>
   );
 }
