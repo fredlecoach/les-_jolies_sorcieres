@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="footer ">
       {/* Informations du footer */}
-      <hr />
+      <hr style={{marginTop: "150px"}}/>
       <div className="container py-4">
         <div className="row text-center">
           {/* Horaires */}
